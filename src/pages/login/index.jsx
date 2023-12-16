@@ -27,7 +27,7 @@ const Login = () => {
               variant="default"
               label={"Имя пользователя"}
             />
-            <Input type={open ? "password" : "text"} placeholder={"Пароль"} label={"Пароль"} icon={<Closed open={open} setOpen={setOpen}/>}/>
+            <Input type={open ? "text" : "password"} placeholder={"Пароль"} label={"Пароль"} icon={<Closed open={open} setOpen={setOpen}/>}/>
           </form>
           <p>Забыли пароль</p>
           <Button text={"Войти"} />
