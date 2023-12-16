@@ -44,12 +44,7 @@ const Login = () => {
               label={"Имя пользователя"}
             />
 
-            <Input
-              type={open ? "text" : "password"}
-              placeholder={"Пароль"}
-              label={"Пароль"}
-              icon={<Closed open={open} setOpen={setOpen} />}
-            />
+            <Input type={open ? "text" : "password"} placeholder={"Пароль"} label={"Пароль"} icon={<Closed open={open} setOpen={setOpen}/>}/>
           </form>
           <Button text={"Забыли пароль"} variant="link" className={"linked"} />
           <Button text={"Войти"} variant="disabled" className={"enter-btn"} />
