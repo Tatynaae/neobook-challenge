@@ -1,0 +1,42 @@
+@mixin base {
+  outline: none;
+  width: 100%;
+
+  &::placeholder {
+    color: #c0c0c0;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.default {
+  @include base;
+  border: none;
+  padding: 10px 0;
+}
+
+.background {
+  @include base;
+  background-color: #f7f6f9;
+}
+
+.label {
+  color: #c0c0c0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.input-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.input-with-icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
