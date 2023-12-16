@@ -1,6 +1,7 @@
 @mixin base {
   outline: none;
   width: 100%;
+  padding: 10px 0;
 
   &::placeholder {
     color: #c0c0c0;

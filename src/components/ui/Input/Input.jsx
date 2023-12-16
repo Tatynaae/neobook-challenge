@@ -18,8 +18,11 @@ const Input = ({
   };
 
   const Labeled = () => {
-    setLabeled(!labeled);
+    setLabeled(true);
   };
+  const Blur = (e) => {
+    e.target.value ? setLabeled(true) : setLabeled(false);
+  }
 
   return (
     <div className="input-cover">
@@ -32,7 +35,9 @@ const Input = ({
           type={type}
           placeholder={labeled ? "" : placeholder}
           className={clsx([variantStyles[variant]], className)}
-          onClick={Labeled}
+          onFocusCapture={Labeled}
+          onBlur={(e) => Blur(e)}
+
         />
         {icon && (
           <div>{icon}</div>

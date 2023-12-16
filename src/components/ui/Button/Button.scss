@@ -1,0 +1,35 @@
+@mixin baseButton {
+  cursor: pointer;
+}
+
+@mixin dis-able {
+  color: #fff;
+  padding: 10px;
+  border-radius: 80px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+}
+
+.default-btn {
+  @include baseButton;
+  @include dis-able;
+  background: #5458ea;
+}
+
+.disabled {
+  @include dis-able;
+  cursor: not-allowed;
+  pointer-events: all !important;
+  background: #c0c0c0;
+}
+
+.link {
+  @include baseButton;
+  color: #5458ea;
+  font-size: 14px;
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
