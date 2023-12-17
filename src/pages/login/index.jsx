@@ -4,6 +4,7 @@ import "./index.scss";
 import banner from "../../assets/images/image 1.png";
 import Basket from "../../assets/icons/basket";
 import Input from "../../components/ui/Input/Input";
+
 import Button from "../../components/ui/Button/Button";
 import Closed from "../../assets/icons/closed";
 
@@ -52,6 +53,7 @@ const Login = () => {
           <Button text={"Забыли пароль"} variant="link" className={"linked"} />
           <Button text={"Войти"} variant="disabled" className={"enter-btn"} />
           <Button text={"Зарегистрироваться"} variant="link" />
+
         </div>
       </div>
     </div>

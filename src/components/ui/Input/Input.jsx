@@ -37,6 +37,7 @@ const Input = ({
           className={clsx([variantStyles[variant]], className)}
           onFocusCapture={Labeled}
           onBlur={(e) => Blur(e)}
+
         />
         {icon && (
           <div>{icon}</div>
