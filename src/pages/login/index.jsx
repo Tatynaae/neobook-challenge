@@ -13,7 +13,7 @@ import { selectAuth, setPassword, setUsername } from "../../store/authSlice";
 
 const Login = () => {
   const [open, setOpen] = React.useState(false);
-  const [validData, setValidData] = React.useState(false);
+  // const [validData, setValidData] = React.useState(false);
 
   const dispatch = useDispatch();
   const { username, password } = useSelector(selectAuth);
