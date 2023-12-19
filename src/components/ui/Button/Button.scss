@@ -1,5 +1,6 @@
 @mixin baseButton {
   cursor: pointer;
+  width: 100%;
 }
 
 @mixin dis-able {
@@ -22,6 +23,7 @@
   cursor: not-allowed;
   pointer-events: all !important;
   background: #c0c0c0;
+  width: 100%;
 }
 
 .link {
@@ -32,4 +34,5 @@
   background: transparent;
   border: none;
   padding: 0;
+  // text-align: start;
 }
